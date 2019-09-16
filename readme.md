@@ -3,7 +3,7 @@ Velkommen til mit github repo.. :+1:
 <b>Huskeliste:</b>
 - [x] tilføj en readme
 - [x] tilføj en emoije :+1:
-- [x] få det til at se awesome ud!
+
 <br>
 <br>
 
