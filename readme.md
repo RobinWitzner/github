@@ -1,1 +1,1 @@
-Velkommen til mit github repo..
+Velkommen til mit github repo.. :+1:
