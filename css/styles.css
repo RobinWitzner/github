@@ -1,0 +1,91 @@
+/* Alt der gælder for mobil og højere */
+
+* { /* Gælder alt på hele siden */
+    -webkit-box-sizing: border-box; /* -webkit- browserunderstøttelse */
+    box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen mv. */
+}
+
+body {
+    margin: 0; /* Ingen kanter i siden af browser */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Ingen ydre margen fra overskrifter */
+    padding: 0; /* Ingen indre margen fra overskrifter */
+}
+
+ul, ol {
+    margin: 0; /* Ingen ydre margen fra lister */
+    padding: 0; /* Ingen indre margen fra lister */
+    list-style-position: inside; /* List punkter står på linje */
+}
+
+li {
+    margin: 0; /* Ingen ydre margen fra listpunkter */
+}
+
+p {
+    margin: 0; /* Ingen ydre margen fra paragraffer */
+    padding: 0; /* Ingen indre margen fra paragraffer */
+}
+
+/* Sikrer billeder er responsive */
+img {
+    display: block; /* Billeder er et element (laver linjeskift) */
+    max-width: 100%; /* Bredde må maks fylde 100% */
+    height: auto; /* Højden skal tilpasse sig */
+}
+
+body {
+    background-color: cadetblue;
+}
+
+.loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -60px 0 0 -60px;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 10px solid #19bee1;
+}
+.loading:after {
+    content: '';
+    background: transparent;
+    width: 140%;
+    height: 140%;
+    position: absolute;
+    border-radius: 100%;
+    top: -20%;
+    left: -20%;
+    opacity: 0.7;
+    box-shadow: rgba(255, 255, 255, 0.6) -4px -5px 3px -3px;
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* Alt der ændres i tablet stående fra mobil */
+}
+
+@media screen and (min-width: 992px) {
+    /* Alt der ændres i tablet liggende fra mobil og tablet stående */
+}
+
+@media screen and (min-width: 1200px) {
+    /* Alt der ændres i computer fra mobil, tablet stående og tablet liggende */
+}
+
+@media print {
+    /* Alt der gælder for print specifikt */
+}
